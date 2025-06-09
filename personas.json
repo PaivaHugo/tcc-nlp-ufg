@@ -1,0 +1,46 @@
+{
+    "personas":[
+        {
+            "nome": "camila",
+            "time_do_coracao": "fluminense",
+            "scores":{
+                "tecnologia": 0.10,
+                "economia" : 0.50,
+                "ciencia": 0.15,
+                "saude": 0.89,
+                "educacao": 0.93,
+                "turismo": 0.90,
+                "politica": 0.55,
+                "esporte": 0.90
+            }
+        },
+        {
+            "nome": "lucas",
+            "time_do_coracao": "flamengo",
+            "scores":{
+                "tecnologia": 0.95,
+                "economia" : 0.85,
+                "ciencia": 0.90,
+                "saude": 0.45,
+                "educacao": 0.50,
+                "turismo": 0.55,
+                "politica": 0.2,
+                "esporte": 0.90
+            }
+        },
+        {
+            "nome": "renato",
+            "time_do_coracao": "vasco",
+            "scores":{
+                "tecnologia": 0.20,
+                "economia" : 0.90,
+                "ciencia": 0.25,
+                "saude": 0.5,
+                "educacao": 0.45,
+                "turismo": 0.10,
+                "politica": 0.95,
+                "esporte": 0.15
+            }
+        }
+    ]
+}
