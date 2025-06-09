@@ -1,0 +1,82 @@
+{
+    "materias":
+        [
+            {
+                "categoria": "tecnologia",
+                "url": "https://g1.globo.com/fantastico/noticia/2025/06/08/novos-videos-hiper-realistas-feitos-com-inteligencia-artificial-criam-desafio-de-distinguir-o-que-e-real.ghtml",
+                "titulo": "Novos vídeos hiper-realistas feitos com inteligência artificial criam desafio de distinguir o que é real",
+                "subtitulo": "Chamada de Veo 3, a tecnologia do Google permite gerar cenas com personagens, trilhas sonoras e até sotaques, tudo a partir de comandos de texto.",
+                "texto": ""
+            },
+            {
+                "categoria": "economia",
+                "url": "https://g1.globo.com/economia/noticia/2025/06/09/lci-e-lca-como-funcionam-e-o-que-pode-mudar-com-a-cobranca-de-ir-anunciada-pelo-governo.ghtml",
+                "titulo": "LCI e LCA: como funcionam e o que pode mudar com a cobrança de IR anunciada pelo governo",
+                "subtitulo": "Governo quer cobrar alíquota de 5% sobre investimentos atualmente isentos para compensar a provável revogação do aumento do IOF. Entenda a diferença do LCI e LCA para outros tipos de renda fixa.",
+                "texto": ""
+            },
+            {
+                "categoria": "ciencia",
+                "url": "https://g1.globo.com/ciencia/noticia/2025/06/09/nosso-universo-pode-nao-ter-surgido-do-big-bang-mas-dentro-de-um-buraco-negro-em-um-universo-maior.ghtml",
+                "titulo": "Nosso universo pode não ter surgido do Big Bang, mas dentro de um buraco negro em um universo maior",
+                "subtitulo": "Nova proposta sobre a origem de nosso Universo tem a vantagem de fazer previsões que podem ser testadas",
+                "texto": ""
+            },
+            {
+                "categoria": "saude",
+                "url": "https://g1.globo.com/saude/bem-estar/noticia/2025/06/07/so-um-pais-e-autossuficiente-para-dieta-saudavel-diz-estudo.ghtml",
+                "titulo": "Só um país é autossuficiente para dieta saudável, diz estudo",
+                "subtitulo": "Pesquisa mapeou o quanto a produção de sete grupos alimentares em cada país supre as necessidades da população. Apenas uma pequena nação sul-americana brilhou com independência.",
+                "texto": ""
+            },
+            {
+                "categoria": "educacao",
+                "url": "https://g1.globo.com/educacao/noticia/2025/06/08/nas-escolas-sem-notas-e-sem-provas-quais-alunos-se-dao-bem-entenda-impacto-de-teste-na-dinamarca.ghtml",
+                "titulo": "Nas escolas sem notas e sem provas, quais alunos se dão bem? Entenda impacto de teste na Dinamarca",
+                "subtitulo": "O g1 conversou com Noemi Katznelson, referência mundial em educação e uma das pesquisadoras à frente do estudo da Universidade de Aalborg. ‘Entre os jovens de baixo desempenho acadêmico, o estresse não desaparece, só muda de foco’, diz.",
+                "texto": ""
+            },
+            {
+                "categoria": "turismo",
+                "url": "https://g1.globo.com/turismo-e-viagem/noticia/2025/06/05/brasil-tem-pelo-menos-quatro-restaurantes-entre-os-100-melhores-do-mundo-veja-quais-sao.ghtml",
+                "titulo": "Brasil tem quatro restaurantes entre os melhores do mundo; veja quais são",
+                "subtitulo": "The World's 50 Best Restaurants revelou lista que vai do 51º ao 100º lugar e inclui quatro restaurantes do país. Primeiros 50 colocados serão revelados em 19 de junho.",
+                "texto": ""
+            },
+            {
+                "categoria": "politica",
+                "url": "https://g1.globo.com/politica/blog/andreia-sadi/post/2025/06/09/zambelli-autoridades-motta-cassacao.ghtml",
+                "titulo": "Zambelli deve se apresentar esta semana e pedirá para Motta segurar cassação",
+                "subtitulo": "A deputada foi condenada a 10 anos de prisão por invadir os sistemas do Conselho Nacional de Justiça (CNJ) e inserir documentos falsos nele. No sábado (7), Moraes determinou a prisão definitiva de Zambelli.",
+                "texto": ""
+            },
+            {
+                "categoria": "esporte",
+                "url": "https://ge.globo.com/futebol/times/flamengo/noticia/2025/06/09/jorginho-aparece-no-bid-e-esta-apto-para-estrear-pelo-flamengo.ghtml",
+                "titulo": "Jorginho aparece no BID e está apto a estrear pelo Flamengo",
+                "subtitulo": "Meia apareceu no site nesta segunda-feira e fará o primeiro jogo na Copa do Mundo de Clubes",
+                "texto": ""
+            },
+            {
+                "categoria": "esporte",
+                "url": "https://ge.globo.com/futebol/times/vasco/noticia/2025/06/09/vasco-rescinde-com-payet.ghtml",
+                "titulo": "Vasco rescinde contrato com Payet",
+                "subtitulo": "Francês não joga mais pelo clube de São Januário",
+                "texto": ""
+            },
+            {
+                "categoria": "esporte",
+                "url": "https://ge.globo.com/futebol/times/fluminense/noticia/2025/06/06/prestes-a-pegar-o-borussia-thiago-silva-do-fluminense-cita-maior-diferenca-entre-europa-e-brasil.ghtml",
+                "titulo": "Prestes a pegar o Borussia, Thiago Silva, do Fluminense, cita maior diferença entre Europa e Brasil",
+                "subtitulo": "Capitão tricolor passou 16 anos no futebol europeu e acredita que a parte técnica não é o que mais distancia os times",
+                "texto": ""
+            },
+            {
+                "categoria": "esporte",
+                "url": "https://ge.globo.com/futebol/selecao-brasileira/noticia/2025/06/09/da-tatica-as-brincadeiras-como-foi-a-primeira-semana-de-treinos-de-ancelotti-na-selecao.ghtml",
+                "titulo": "Da tática às brincadeiras: como foi a primeira semana de treinos de Ancelotti na Seleção",
+                "subtitulo": "Com pouco tempo para trabalhar, técnico aproveita cada oportunidade para criar laços e transmitir orientações, sem perder a leveza",
+                "texto": ""
+            }
+        ]
+}
