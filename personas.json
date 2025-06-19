@@ -2,6 +2,7 @@
     "personas":[
         {
             "nome": "camila",
+            "id": 1,
             "time_do_coracao": "fluminense",
             "scores":{
                 "tecnologia": 0.10,
@@ -16,6 +17,7 @@
         },
         {
             "nome": "lucas",
+            "id": 2,
             "time_do_coracao": "flamengo",
             "scores":{
                 "tecnologia": 0.95,
@@ -30,6 +32,7 @@
         },
         {
             "nome": "renato",
+            "id": 3,
             "time_do_coracao": "vasco",
             "scores":{
                 "tecnologia": 0.20,
