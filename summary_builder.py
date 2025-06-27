@@ -6,8 +6,9 @@ from langchain_ollama.llms import OllamaLLM
 from prompts import LlamaPrompt, MaritacaPrompt, GPTPrompt
 
 class SummaryBuilder():
-    def __init__(self, news, model="llama"):
+    def __init__(self, news, user_preferences, model="llama"):
         self.news = news
+        self.user_preferences = user_preferences
         self.model = model
         self.output_parser = StrOutputParser()
 
@@ -24,7 +25,7 @@ class SummaryBuilder():
 
     def maritalk(self):
         m_prompt = MaritacaPrompt()
-        prompt = m_prompt.get(self.news)
+        prompt = m_prompt.get(self.news, self.user_preferences)
         llm = ChatMaritalk(
             model=os.environ.get("MARITACA_MODEL", ""),  
             api_key=os.environ.get("MARITACA_API_KEY", ""),
@@ -38,14 +39,14 @@ class SummaryBuilder():
     
     def gpt(self):
         g_prompt = GPTPrompt()
-        prompt = g_prompt.get(self.news)
+        prompt = g_prompt.get(self.news, self.user_preferences)
         llm = OpenAI(
             model=os.environ.get("OPENAI_MODEL", ""),  
             api_key=os.environ.get("OPENAI_API_KEY", ""),
         )
         chain = prompt | llm | self.output_parser
 
-        response = chain.invoke({"input": {self.news}})
+        response = chain.invoke({"input": {self.news}}).split("Saída: ")[1]
         return response
 
     def llama(self):
