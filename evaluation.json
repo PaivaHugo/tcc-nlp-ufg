@@ -1,0 +1,310 @@
+{
+    "1": {
+        "maritaca": {
+            "summary": " A nova ferramenta Veo 3 do Google permite criar vídeos realistas apenas com comandos de texto, incluindo personagens e trilhas sonoras. Apesar da IA avançada, ainda há um elemento humano essencial na criação de conteúdo. Enquanto isso, pesquisadores desenvolvem tecnologias para detectar vídeos falsos, destacando a importância de questionar e desconfiar do que vemos online.",
+            "bert_score": {
+                "precision": 0.63826584815979,
+                "recall": 0.7213711738586426,
+                "f1": 0.6772786974906921
+            },
+            "rouge_l": {
+                "precision": 0.4918032786885246,
+                "recall": 0.03783102143757881,
+                "f1": 0.07025761124121781
+            }
+        },
+        "gpt": {
+            "summary": "\n\n\n        Saída: \"A nova ferramenta Veo 3 do Google revoluciona a criação de vídeos, permitindo que usuários gerem cenas realistas apenas com comandos de texto. Apesar da impressionante capacidade da IA, a presença humana na elaboração do conteúdo continua essencial. Pesquisadores também se esforçam para desenvolver tecnologias que detectem vídeos falsos, destacando a necessidade de questionar a veracidade do que consumimos online.\"\n\nA nova ferramenta Veo 3 do Google revoluciona a criação de vídeos, permitindo que usuários gerem cenas realistas apenas com comandos de texto. Apesar da impressionante capacidade da IA, a presença humana na elaboração do conteúdo continua essencial. Pesquisadores também se esforçam para desenvolver tecnologias que detectem vídeos falsos, destacando a necessidade de questionar a veracidade do que consumimos online.",
+            "bert_score": {
+                "precision": 0.6375740766525269,
+                "recall": 0.6908042430877686,
+                "f1": 0.6631226539611816
+            },
+            "rouge_l": {
+                "precision": 0.37142857142857144,
+                "recall": 0.06557377049180328,
+                "f1": 0.11146838156484459
+            }
+        }
+    },
+    "2": {
+        "maritaca": {
+            "summary": " O governo anunciou um acordo para reduzir as alíquotas do IOF e, ao mesmo tempo, pretende tributar investimentos atualmente isentos, como LCI e LCA, com uma alíquota de 5% de Imposto de Renda. A medida visa aumentar a arrecadação e compensar a revogação do aumento do IOF, que gerou reação negativa no mercado e no Congresso. Além disso, propõe aumentar a CSLL para instituições financeiras e taxar apostas esportivas. O presidente Lula deve discutir essas propostas após retornar da França, enquanto o Congresso se mobiliza contra o aumento do IOF.",
+            "bert_score": {
+                "precision": 0.6884157657623291,
+                "recall": 0.7917963266372681,
+                "f1": 0.7364959120750427
+            },
+            "rouge_l": {
+                "precision": 0.65,
+                "recall": 0.04659498207885305,
+                "f1": 0.08695652173913045
+            }
+        },
+        "gpt": {
+            "summary": " Saída: \"O governo brasileiro anunciou um novo acordo que visa reduzir alíquotas de impostos, incluindo a cobrança de 5% de Imposto de Renda sobre investimentos isentos como LCIs e LCAs. A medida busca aumentar a arrecadação e compensar a revogação do aumento do IOF, que gerou reações negativas. Além disso, instituições financeiras também terão mudanças na tributação e novas regras para apostas esportivas.\" \n\n         \n            Conteúdo completo da notícia: \"Novas normas de saúde mental são apresentadas em conferência O Ministério da Saúde do Brasil lançou novas diretrizes para a saúde mental durante uma conferência em Brasília. As novas regras têm como objetivo aprimorar o atendimento psiquiátrico no país, oferecendo mais suporte e recursos para pacientes. Entre as novidades, estão a ampliação do acesso a tratamentos e a implementação de programas de prevenção e promoção da saúde mental. A conferência contou com a participação de especialistas da área, que ressaltaram a importância de um olhar mais humanizado e integrado no cuidado com os pacientes. Os novos protocolos também visam reduzir o estigma associado aos transtornos mentais e promover a inclusão social. A iniciativa é vista como um avanço significativo na forma como a saúde mental é abordada no",
+            "bert_score": {
+                "precision": 0.7229945063591003,
+                "recall": 0.7250425815582275,
+                "f1": 0.7240170836448669
+            },
+            "rouge_l": {
+                "precision": 0.4482758620689655,
+                "recall": 0.07455197132616488,
+                "f1": 0.12784265519360788
+            }
+        }
+    },
+    "3": {
+        "maritaca": {
+            "summary": " **Tema principal: ciência**\n\nUm novo modelo cosmológico sugere que nosso Universo pode ter surgido de um \"quique\" dentro de um buraco negro, em vez de um Big Bang tradicional. Pesquisadores propõem que, sob a influência da gravidade e da mecânica quântica, o colapso de matéria densa não leva a uma singularidade, mas a um rebote que inicia uma fase de expansão. Esse \"Universo do buraco negro\" explica naturalmente a expansão acelerada do Universo, sem necessidade de campos hipotéticos. O modelo também faz previsões testáveis sobre a curvatura do espaço e a formação de estruturas cósmicas, que futuras missões espaciais poderão verificar.",
+            "bert_score": {
+                "precision": 0.6994878649711609,
+                "recall": 0.7451468706130981,
+                "f1": 0.7215958833694458
+            },
+            "rouge_l": {
+                "precision": 0.5833333333333334,
+                "recall": 0.04745762711864407,
+                "f1": 0.0877742946708464
+            }
+        },
+        "gpt": {
+            "summary": "\n\n\n        Saída: \"Um novo estudo propõe que o nosso Universo pode não ter surgido do Big Bang, mas de dentro de um buraco negro em um Universo maior. Essa teoria revolucionária sugere que o colapso gravitacional, seguido por um 'quique', poderia explicar a origem do cosmos. O modelo apresenta previsões testáveis e busca responder a questões fundamentais sobre a estrutura do Universo, desafiando a visão tradicional do Big Bang e oferecendo novas perspectivas sobre nosso lugar no cosmos.\"\n\nConteúdo completo da notícia: \"O Brasil é um dos países que mais consome café no mundo. A paixão nacional pelo café é visível em todas as partes do país, desde as cafeterias sofisticadas nas grandes cidades até os pequenos estabelecimentos em comunidades rurais. Recentemente, o Brasil também se destacou na produção de cafés especiais, que têm conquistado paladares internacionais. Esses cafés são cultivados em regiões específicas, com condições climáticas ideais, e passam por processos rigorosos de seleção e torra. O aumento da demanda por cafés de qualidade tem incentivado os agricultores a investirem em técnicas sustentáveis e a diversificarem suas produções. Com isso, o Brasil não só se afirma como um dos maiores produtores de café do",
+            "bert_score": {
+                "precision": 0.7247573137283325,
+                "recall": 0.7212007641792297,
+                "f1": 0.7229746580123901
+            },
+            "rouge_l": {
+                "precision": 0.38738738738738737,
+                "recall": 0.05830508474576271,
+                "f1": 0.10135533294048318
+            }
+        }
+    },
+    "4": {
+        "maritaca": {
+            "summary": " Estudo da Nature Food revela que apenas a Guiana é autossuficiente em todos os sete grupos de alimentos essenciais, segundo a dieta Livewell, que prioriza proteínas vegetais e grãos integrais. O Brasil consegue produzir cinco dos sete grupos, mas enfrenta déficits em verduras e peixes. A pesquisa destaca que a maioria dos países não consegue se sustentar sem comércio internacional, evidenciando disparidades globais e vulnerabilidade a crises de suprimento. A manutenção do comércio é crucial para garantir uma dieta saudável e sustentável, apesar das tendências protecionistas e nacionalistas.",
+            "bert_score": {
+                "precision": 0.6593307256698608,
+                "recall": 0.7419330477714539,
+                "f1": 0.6981973052024841
+            },
+            "rouge_l": {
+                "precision": 0.6597938144329897,
+                "recall": 0.05931417979610751,
+                "f1": 0.108843537414966
+            }
+        },
+        "gpt": {
+            "summary": " \"Apenas a Guiana é autossuficiente em alimentos entre 186 países analisados. O estudo ressalta que, embora a América do Sul se destaque em certos grupos alimentares, muitos países ainda enfrentam desafios, especialmente na produção de verduras. A pesquisa alerta para a vulnerabilidade global em caso de interrupções no comércio alimentar e a importância de manter redes de comércio para garantir a segurança alimentar.\"",
+            "bert_score": {
+                "precision": 0.5955333113670349,
+                "recall": 0.6861860752105713,
+                "f1": 0.6376538276672363
+            },
+            "rouge_l": {
+                "precision": 0.6197183098591549,
+                "recall": 0.04077849860982391,
+                "f1": 0.07652173913043478
+            }
+        }
+    },
+    "5": {
+        "maritaca": {
+            "summary": " Escolas dinamarquesas estão experimentando a eliminação ou redução de provas e notas para alunos de 15 a 17 anos, buscando aliviar estresse e ansiedade. No entanto, um estudo revelou que alunos com baixo desempenho foram os mais prejudicados, sentindo-se desorientados sem um sistema de referência. A pesquisadora Noemi Katznelson, da Universidade de Aalborg, destaca que a chave para o sucesso é implementar feedbacks contínuos e construtivos, promovendo motivação e engajamento. A ausência de notas pode estimular um aprendizado mais autônomo e menos mecânico, mas exige cuidados para não desmotivar os estudantes.",
+            "bert_score": {
+                "precision": 0.6910752058029175,
+                "recall": 0.7809898853302002,
+                "f1": 0.7332864999771118
+            },
+            "rouge_l": {
+                "precision": 0.5841584158415841,
+                "recall": 0.03653250773993808,
+                "f1": 0.06876456876456877
+            }
+        },
+        "gpt": {
+            "summary": " \"\n\n\n        Saída: \"Na Dinamarca, escolas estão abolindo provas e notas para reduzir a ansiedade dos alunos, mas essa mudança tem consequências mistas. Enquanto estudantes mais seguros se beneficiam, aqueles com dificuldades se sentem desorientados e desmotivados. Pesquisadores destacam a importância de implementar métodos de feedback contínuo para guiar os alunos em seu aprendizado, evitando a pressão excessiva e incentivando a autoconfiança. O desafio é encontrar um equilíbrio que promova a educação de forma eficaz.\" \n\n        \n            Conteúdo completo da notícia: \"O impacto do aquecimento global no turismo e em viagens O turismo enfrenta desafios crescentes devido ao aquecimento global, que está afetando destinos turísticos em todo o mundo. O aumento das temperaturas, mudanças nos padrões climáticos e a elevação do nível do mar estão impactando diretamente a indústria do turismo. Destinos populares, como ilhas e regiões costeiras, estão se tornando menos atraentes devido ao risco de desastres naturais e degradação ambiental. Além disso, as mudanças climáticas estão alterando a migratória de espécies e a biodiversidade, o que pode afetar a experiência dos turistas. Com isso, a indústria do turismo precisa se adaptar a essas mudanças para garantir a",
+            "bert_score": {
+                "precision": 0.6895948648452759,
+                "recall": 0.7009414434432983,
+                "f1": 0.6952218413352966
+            },
+            "rouge_l": {
+                "precision": 0.3824884792626728,
+                "recall": 0.051393188854489166,
+                "f1": 0.0906113537117904
+            }
+        }
+    },
+    "6": {
+        "maritaca": {
+            "summary": " Quatro restaurantes brasileiros foram listados entre os 100 melhores do mundo pelo The World's 50 Best Restaurants: Tuju (70a posição), Oteque (81a), A Casa do Porco (83a) e Evvai (95a). O Tuju, em São Paulo, estreia na lista com seu menu sazonal. O Oteque, no Rio, destaca-se por pratos minimalistas com frutos do mar. A Casa do Porco, também em SP, oferece degustação de porco e um novo menu vegetariano. O Evvai, em Pinheiros, mistura culinária italiana com ingredientes brasileiros. A premiação revelará os 50 melhores em junho.",
+            "bert_score": {
+                "precision": 0.6496100425720215,
+                "recall": 0.7502116560935974,
+                "f1": 0.6962958574295044
+            },
+            "rouge_l": {
+                "precision": 0.6770833333333334,
+                "recall": 0.08916323731138547,
+                "f1": 0.1575757575757576
+            }
+        },
+        "gpt": {
+            "summary": "\n\n\n        Saída: \"Os restaurantes brasileiros Tuju, Evvai, A Casa do Porco e Oteque foram destacados na lista estendida dos 100 melhores do mundo pelo The World's 50 Best Restaurants. Embora Tuju tenha alcançado a 70ª posição, outros como A Casa do Porco e Oteque tiveram quedas em relação ao ano passado. O prêmio reforça a excelência da gastronomia brasileira, com destaque para a culinária sazonal e inovações nos menus.\"",
+            "bert_score": {
+                "precision": 0.6240308284759521,
+                "recall": 0.7186463475227356,
+                "f1": 0.6680049300193787
+            },
+            "rouge_l": {
+                "precision": 0.6282051282051282,
+                "recall": 0.06721536351165981,
+                "f1": 0.1214374225526642
+            }
+        }
+    },
+    "7": {
+        "maritaca": {
+            "summary": " A deputada federal Carla Zambelli foi condenada a 10 anos de prisão por invadir sistemas do CNJ e inserir documentos falsos, incluindo um mandado contra o ministro Alexandre de Moraes. Zambelli, atualmente na Itália, deve se apresentar às autoridades italianas e busca orientação jurídica para lidar com a situação. O presidente da Câmara, Hugo Motta, afirmou que a Casa seguirá a decisão do STF, declarando a perda de seu mandato. O caso também envolve um processo de extradição, e Moraes determinou a prisão definitiva da parlamentar.",
+            "bert_score": {
+                "precision": 0.6887223124504089,
+                "recall": 0.7880798578262329,
+                "f1": 0.7350587844848633
+            },
+            "rouge_l": {
+                "precision": 0.6770833333333334,
+                "recall": 0.17105263157894737,
+                "f1": 0.273109243697479
+            }
+        },
+        "gpt": {
+            "summary": "\n\n\nSaída: \"A deputada Carla Zambelli, condenada a 10 anos de prisão por invadir o CNJ e inserir documentos falsos, deve se apresentar às autoridades italianas. O STF determinou que comece a cumprir sua pena e encaminhou documentos para a Câmara dos Deputados, que deve declarar a perda de seu mandato, seguindo as decisões judiciais.\"",
+            "bert_score": {
+                "precision": 0.6319883465766907,
+                "recall": 0.7702053189277649,
+                "f1": 0.6942846775054932
+            },
+            "rouge_l": {
+                "precision": 0.7413793103448276,
+                "recall": 0.11315789473684211,
+                "f1": 0.1963470319634703
+            }
+        }
+    },
+    "8": {
+        "maritaca": {
+            "summary": " Jorginho, novo reforço do Flamengo, está oficialmente inscrito e pronto para estrear na Copa do Mundo de Clubes. O jogador, cujo nome foi publicado no BID, deve entrar em campo na primeira partida contra o Espérance. Enquanto se integra ao time, os fãs podem adquirir ingressos e acompanhar as últimas notícias do clube, além de montar times no Cartola e ouvir podcasts dedicados ao Flamengo.",
+            "bert_score": {
+                "precision": 0.6865065097808838,
+                "recall": 0.7798690795898438,
+                "f1": 0.7302156090736389
+            },
+            "rouge_l": {
+                "precision": 0.37142857142857144,
+                "recall": 0.1452513966480447,
+                "f1": 0.2088353413654619
+            }
+        },
+        "gpt": {
+            "summary": " Saída: \"Jorginho foi oficialmente inscrito pelo Flamengo e está apto a estrear no clube. O meia, anunciado na última sexta-feira, participou de seu primeiro treino e deve jogar na Copa do Mundo de Clubes contra o Espérance. A expectativa é alta para a sua estreia e ele promete ser um reforço importante para a equipe.\"",
+            "bert_score": {
+                "precision": 0.6844771504402161,
+                "recall": 0.7897534370422363,
+                "f1": 0.7333563566207886
+            },
+            "rouge_l": {
+                "precision": 0.5517241379310345,
+                "recall": 0.1787709497206704,
+                "f1": 0.270042194092827
+            }
+        }
+    },
+    "9": {
+        "maritaca": {
+            "summary": " O Vasco rescindiu o contrato com o meia Payet, que não atuava mais pelo clube devido a uma lesão no joelho e questões familiares. Payet, que tinha o segundo maior salário do time, não conseguiu corresponder às expectativas em campo, jogando apenas 17 partidas e sem marcar gols em 2025. A torcida avaliou sua passagem como decepcionante. A decisão de encerrar o vínculo foi tomada antes que o contrato expirasse em julho, refletindo a insatisfação com o rendimento do jogador.",
+            "bert_score": {
+                "precision": 0.6731564402580261,
+                "recall": 0.7605793476104736,
+                "f1": 0.7142025232315063
+            },
+            "rouge_l": {
+                "precision": 0.5454545454545454,
+                "recall": 0.10666666666666667,
+                "f1": 0.17843866171003717
+            }
+        },
+        "gpt": {
+            "summary": " Saída: \"O Vasco anunciou a rescisão de contrato com o jogador francês Payet, que não conseguiu se destacar na equipe. Com apenas 17 jogos em 2025 e sem marcar gols, sua passagem foi considerada decepcionante pela torcida. Apesar de ter uma carreira promissora, o desempenho apagado e problemas familiares levaram à decisão de encerramento do vínculo.\"",
+            "bert_score": {
+                "precision": 0.63875412940979,
+                "recall": 0.7256426811218262,
+                "f1": 0.6794317364692688
+            },
+            "rouge_l": {
+                "precision": 0.4426229508196721,
+                "recall": 0.06,
+                "f1": 0.10567514677103718
+            }
+        }
+    },
+    "10": {
+        "maritaca": {
+            "summary": " O zagueiro Thiago Silva, do Fluminense, destaca as diferenças entre o futebol europeu e brasileiro, principalmente a intensidade e a qualidade dos gramados. Com 16 anos de experiência na Europa, ele observa que a Premier League oferece condições climáticas e de campo superiores, o que impacta o desempenho dos jogadores. Thiago Silva enfrentou dificuldades na readaptação ao futebol brasileiro devido aos gramados, mas lidera bem a equipe. O Fluminense se prepara para enfrentar o Borussia Dortmund na Copa do Mundo de Clubes da FIFA, buscando igualar a intensidade europeia.",
+            "bert_score": {
+                "precision": 0.678013801574707,
+                "recall": 0.7473928928375244,
+                "f1": 0.7110149264335632
+            },
+            "rouge_l": {
+                "precision": 0.5212765957446809,
+                "recall": 0.09193245778611632,
+                "f1": 0.15629984051036683
+            }
+        },
+        "gpt": {
+            "summary": " Saída: \"Thiago Silva, zagueiro do Fluminense, destaca as diferenças entre o futebol europeu e brasileiro, ressaltando a intensidade das ligas europeias como um desafio no Brasil, onde o clima e o gramado dificultam o desempenho. Ele também menciona a necessidade de adaptação ao retornar ao país, mas se mostra otimista em relação ao futuro do Fluminense na Copa do Mundo de Clubes.\"",
+            "bert_score": {
+                "precision": 0.6439964771270752,
+                "recall": 0.733458399772644,
+                "f1": 0.6858223080635071
+            },
+            "rouge_l": {
+                "precision": 0.47058823529411764,
+                "recall": 0.0600375234521576,
+                "f1": 0.10648918469217969
+            }
+        }
+    },
+    "11": {
+        "maritaca": {
+            "summary": " Carlo Ancelotti demonstrou versatilidade e bom humor durante sua primeira semana na Seleção Brasileira. Enquanto orienta tecnicamente e taticamente, o treinador também se envolve em brincadeiras e gestos descontraídos, como jogar altinha com os jogadores. Ancelotti, que fala vários idiomas e está aprendendo português, é conhecido por sua simplicidade ao comunicar suas ideias, facilitando a compreensão dos atletas. Ele testou diferentes formações táticas e focou na preparação física, considerando o desgaste dos jogadores que atuam no exterior. Seu estilo humanizado e sua capacidade de gestão de pessoas foram elogiados pela equipe.",
+            "bert_score": {
+                "precision": 0.6879360675811768,
+                "recall": 0.7345349192619324,
+                "f1": 0.7104721665382385
+            },
+            "rouge_l": {
+                "precision": 0.44554455445544555,
+                "recall": 0.04178272980501393,
+                "f1": 0.07640067911714772
+            }
+        },
+        "gpt": {
+            "summary": " Saída: \"Carlo Ancelotti tem se destacado na Seleção Brasileira, mostrando seu carisma e habilidade de gestão. Em sua primeira semana, ele combina rigor tático com leveza, promovendo um ambiente descontraído. O técnico, que já fala algumas palavras em português, busca se conectar com os jogadores e utilizar diferentes formações. Sua abordagem humana e comunicativa tem impressionado a equipe, que elogia sua simplicidade e dedicação.\"",
+            "bert_score": {
+                "precision": 0.6558246612548828,
+                "recall": 0.7176384329795837,
+                "f1": 0.6853405237197876
+            },
+            "rouge_l": {
+                "precision": 0.4383561643835616,
+                "recall": 0.029712163416898793,
+                "f1": 0.05565217391304347
+            }
+        }
+    }
+}
