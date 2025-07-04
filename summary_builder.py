@@ -1,18 +1,24 @@
 import os
+from dotenv import load_dotenv
 from langchain_community.chat_models import ChatMaritalk
 from langchain_core.output_parsers import StrOutputParser
 from langchain_openai import OpenAI
 from langchain_ollama.llms import OllamaLLM
-from prompts_without_preferences import LlamaPrompt, MaritacaPrompt, GPTPrompt
+# from prompts_without_preferences import LlamaPrompt, MaritacaPrompt, GPTPrompt
+from prompts import LlamaPrompt, MaritacaPrompt, GPTPrompt
 
 class SummaryBuilder():
-    def __init__(self, news, model="llama"):
-        self.news = news
-        #self.user_preferences = user_preferences
-        self.model = model
+    def __init__(self):
         self.output_parser = StrOutputParser()
+        load_dotenv()
 
-    def get(self):
+    def get(self, news, txt_categoria, user_preferences, soccer_team, model="maritaca"):
+        self.news = news
+        self.cat = txt_categoria
+        self.user_preferences = user_preferences
+        self.soccer_team = soccer_team
+        self.model = model
+        
         models = {
             "maritaca": self.maritalk,
             "llama": self.llama,
@@ -25,11 +31,11 @@ class SummaryBuilder():
 
     def maritalk(self):
         m_prompt = MaritacaPrompt()
-        # prompt = m_prompt.get(self.news, self.user_preferences)
-        prompt = m_prompt.get(self.news)
+        prompt = m_prompt.get(self.news, self.cat, self.user_preferences, self.soccer_team)
+        #prompt = m_prompt.get(self.news)
         llm = ChatMaritalk(
-            model=os.environ.get("MARITACA_MODEL", ""),  
-            api_key=os.environ.get("MARITACA_API_KEY", ""),
+            model=os.getenv("MARITACA_MODEL", ""),  
+            api_key=os.getenv("MARITACA_API_KEY", ""),
             temperature=0.7,
             # max_tokens=1000,
         )
@@ -40,11 +46,11 @@ class SummaryBuilder():
     
     def gpt(self):
         g_prompt = GPTPrompt()
-        # prompt = g_prompt.get(self.news, self.user_preferences)
-        prompt = g_prompt.get(self.news)
+        prompt = g_prompt.get(self.news, self.user_preferences, self.soccer_team)
+        #prompt = g_prompt.get(self.news)
         llm = OpenAI(
-            model=os.environ.get("OPENAI_MODEL", ""),  
-            api_key=os.environ.get("OPENAI_API_KEY", ""),
+            model=os.getenv("OPENAI_MODEL", ""),  
+            api_key=os.getenv("OPENAI_API_KEY", ""),
         )
         chain = prompt | llm | self.output_parser
 

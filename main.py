@@ -6,69 +6,91 @@ eval = Evaluation()
 
 def get_all_summaries():
     summaries = {}
-    models = ["maritaca", "gpt"]
+    model = "maritaca"
+    summary = SummaryBuilder()
 
-    with open("./materias.json", "r") as f:
-        materias = json.load(f)
+    with open("personas.json", "r") as p:
+        personas = json.load(p)
 
-    for model in models:
-        for item in materias["materias"]:
-            summary = SummaryBuilder(item["texto"], model=model)
-            text = summary.get()
+    with open("materias.json", "r") as m:
+        materias = json.load(m)
+
+    
+    for item in materias["materias"]:
+        for persona in personas["personas"]:
+            scores = json.dumps(persona["scores"], indent=4).replace("{", "{{").replace("}", "}}")
+            text = summary.get(item["texto"], scores, persona["time_do_coracao"])
 
             if item["id"] in summaries:
-                summaries[item["id"]][model]["summary"] = text
+                if persona["id"] in summaries[item["id"]][model]["personas"]:
+                    summaries[item["id"]][model]["personas"][persona["id"]]["summary"] = text
 
-                score_bert_score = eval.calculate_bert_score(item["texto"], text)
-                summaries[item["id"]][model]["bert_score"]["precision"] = score_bert_score[0]
-                summaries[item["id"]][model]["bert_score"]["recall"] = score_bert_score[1]
-                summaries[item["id"]][model]["bert_score"]["f1"] = score_bert_score[2]
+                    score_bert_score = eval.calculate_bert_score(item["texto"], text)
+                    summaries[item["id"]][model]["personas"][persona["id"]]["bert_score"]["precision"] = score_bert_score[0]
+                    summaries[item["id"]][model]["personas"][persona["id"]]["bert_score"]["recall"] = score_bert_score[1]
+                    summaries[item["id"]][model]["personas"][persona["id"]]["bert_score"]["f1"] = score_bert_score[2]
 
-                score_rouge_l = eval.calculate_rougeL(item["texto"], text)
-                summaries[item["id"]][model]["rouge_l"]["precision"] = score_rouge_l[0]
-                summaries[item["id"]][model]["rouge_l"]["recall"] = score_rouge_l[1]
-                summaries[item["id"]][model]["rouge_l"]["f1"] = score_rouge_l[2]
+                    score_rouge_l = eval.calculate_rougeL(item["texto"], text)
+                    summaries[item["id"]][model]["personas"][persona["id"]]["rouge_l"]["precision"] = score_rouge_l[0]
+                    summaries[item["id"]][model]["personas"][persona["id"]]["rouge_l"]["recall"] = score_rouge_l[1]
+                    summaries[item["id"]][model]["personas"][persona["id"]]["rouge_l"]["f1"] = score_rouge_l[2]
+                else:
+                    summaries[item["id"]][model]["personas"][persona["id"]] = {
+                                "summary": text,
+                                "bert_score": {
+                                "precision": 0,
+                                "recall": 0,
+                                "f1": 0
+                            },
+                            "rouge_l": {
+                                "precision": 0,
+                                "recall": 0,
+                                "f1": 0
+                            },
+                            } 
+                    score_bert_score = eval.calculate_bert_score(item["texto"], text)
+                    summaries[item["id"]][model]["personas"][persona["id"]]["bert_score"]["precision"] = score_bert_score[0]
+                    summaries[item["id"]][model]["personas"][persona["id"]]["bert_score"]["recall"] = score_bert_score[1]
+                    summaries[item["id"]][model]["personas"][persona["id"]]["bert_score"]["f1"] = score_bert_score[2]
+
+                    score_rouge_l = eval.calculate_rougeL(item["texto"], text)
+                    summaries[item["id"]][model]["personas"][persona["id"]]["rouge_l"]["precision"] = score_rouge_l[0]
+                    summaries[item["id"]][model]["personas"][persona["id"]]["rouge_l"]["recall"] = score_rouge_l[1]
+                    summaries[item["id"]][model]["personas"][persona["id"]]["rouge_l"]["f1"] = score_rouge_l[2]
 
             else:
                 summaries[item["id"]] = {
-                    "maritaca": {
-                        "summary": "",
-                         "bert_score": {
-                            "precision": 0,
-                            "recall": 0,
-                            "f1": 0
-                        },
-                        "rouge_l": {
-                            "precision": 0,
-                            "recall": 0,
-                            "f1": 0
-                        },
+                    "original_text": item["texto"],
+                    model: {
+                        "personas": {
+                            persona["id"]: {
+                                "summary": "",
+                                "bert_score": {
+                                "precision": 0,
+                                "recall": 0,
+                                "f1": 0
+                            },
+                            "rouge_l": {
+                                "precision": 0,
+                                "recall": 0,
+                                "f1": 0
+                            },
+                            }    
+                        }
+                    
                     },
-                    "gpt": {
-                        "summary": "",
-                        "bert_score": {
-                            "precision": 0,
-                            "recall": 0,
-                            "f1": 0
-                        },
-                        "rouge_l": {
-                            "precision": 0,
-                            "recall": 0,
-                            "f1": 0
-                        },
-                    }
                 }
-                summaries[item["id"]][model]["summary"] = text
+                summaries[item["id"]][model]["personas"][persona["id"]]["summary"] = text
 
                 score_bert_score = eval.calculate_bert_score(item["texto"], text)
-                summaries[item["id"]][model]["bert_score"]["precision"] = score_bert_score[0]
-                summaries[item["id"]][model]["bert_score"]["recall"] = score_bert_score[1]
-                summaries[item["id"]][model]["bert_score"]["f1"] = score_bert_score[2]
+                summaries[item["id"]][model]["personas"][persona["id"]]["bert_score"]["precision"] = score_bert_score[0]
+                summaries[item["id"]][model]["personas"][persona["id"]]["bert_score"]["recall"] = score_bert_score[1]
+                summaries[item["id"]][model]["personas"][persona["id"]]["bert_score"]["f1"] = score_bert_score[2]
 
                 score_rouge_l = eval.calculate_rougeL(item["texto"], text)
-                summaries[item["id"]][model]["rouge_l"]["precision"] = score_rouge_l[0]
-                summaries[item["id"]][model]["rouge_l"]["recall"] = score_rouge_l[1]
-                summaries[item["id"]][model]["rouge_l"]["f1"] = score_rouge_l[2]
+                summaries[item["id"]][model]["personas"][persona["id"]]["rouge_l"]["precision"] = score_rouge_l[0]
+                summaries[item["id"]][model]["personas"][persona["id"]]["rouge_l"]["recall"] = score_rouge_l[1]
+                summaries[item["id"]][model]["personas"][persona["id"]]["rouge_l"]["f1"] = score_rouge_l[2]
 
     print(summaries)
     with open("evaluation.json", "w", encoding='utf-8') as f:
