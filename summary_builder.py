@@ -14,7 +14,7 @@ class SummaryBuilder():
         self.base_prompt = BasePrompt()
         load_dotenv()
 
-    def get(self, person_name, news, txt_categoria, user_preferences, soccer_team, model="gpt"):
+    def get(self, person_name, news, txt_categoria, user_preferences, soccer_team, model="maritaca"):
         self.person_name = person_name
         self.news = news
         self.cat = txt_categoria
@@ -41,13 +41,16 @@ class SummaryBuilder():
         )
 
         chain = template | llm
-        prompt = chain.invoke({"person_name": self.person_name, "text_cat": self.cat, "user_prefs": self.user_preferences, "soccer_team": self.soccer_team}).content
-
+        prompt = chain.invoke({"person_name": self.person_name, "text_cat": self.cat, "user_prefs": self.user_preferences}).content
+        print(prompt)
         return prompt
 
     def maritalk(self):
         m_prompt = MaritacaPrompt()
-        prompt = m_prompt.get(self.news, self.cat, self.user_preferences, self.soccer_team)
+
+        prompt_persona = self.get_prompt_to_persona()
+
+        prompt = m_prompt.get(self.news, self.cat, self.user_preferences, self.soccer_team, prompt_persona)
         #prompt = m_prompt.get(self.news)
         llm = ChatMaritalk(
             model=os.getenv("MARITACA_MODEL", ""),  
@@ -58,6 +61,7 @@ class SummaryBuilder():
         chain = prompt | llm | self.output_parser
 
         response = chain.invoke({"input": {self.news}})
+        print(response)
         return response
     
     def gpt(self):
